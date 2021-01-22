@@ -25,7 +25,11 @@
         "grapes",
         "cherry",
     ];
+document.getElementById("run").addEventListener("click", function(){
 
+    console.log(fruits.includes("apple"));
+
+})
     // your code here
 
 })();

@@ -9,9 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    var people = [
+    let people = [
         {
             firstname: "Bradford",
             lastname: "Coldbath",
@@ -88,7 +88,23 @@
             email: "gkeatche@google.fr",
         },
     ];
+    document.getElementById("run").addEventListener("click", function () {
 
+        people.forEach(function search(person) {
+            let lastname = person.lastname;
+            let firstname = person.firstname;
+
+            if (lastname === "Dupont" && firstname === "Jean") {
+                console.log(person.email);
+                let name =  (person) => person.firstname === "Jean";
+                console.log(people.findIndex(name));
+                console.log(people.findIndex((person) => person.firstname === "Jean"));
+            }
+
+        });
+
+
+    });
     // your code here
 
 })();

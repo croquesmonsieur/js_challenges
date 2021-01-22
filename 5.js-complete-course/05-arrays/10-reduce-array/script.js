@@ -89,6 +89,18 @@
         },
     ];
 
+    document.getElementById("run").addEventListener("click", function(){
+
+        people.forEach(function(person){
+           let personAge = person.age;
+            console.log(personAge);
+        });
+
+        let sum_age = people.reduce((a, person)=>
+             a + person.age, 0);
+        console.log(sum_age);
+
+    })
     // your code here
 
 })();

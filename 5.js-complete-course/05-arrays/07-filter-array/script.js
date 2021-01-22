@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var people = [
         {
@@ -88,7 +88,14 @@
             age: 81,
         },
     ];
+    document.getElementById("run").addEventListener("click", function () {
 
+                let people18 = people.filter(person => person.age > 18);
+                //console.log(people18);
+                console.table(people18);
+
+
+    });
     // your code here
 
 })();

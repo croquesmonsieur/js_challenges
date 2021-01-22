@@ -27,8 +27,8 @@
         ];
 
         fruits.forEach(iterati);
-        function iterati(value){
-            let fruit_piece =  value + ", ";
+        function iterati(fruit){
+            let fruit_piece =  fruit + ", ";
             console.log(fruit_piece);
         }
 

@@ -12,7 +12,7 @@
 (function() {
     document.getElementById("run").addEventListener("click", function() {
 
-        var people = [
+        let people = [
             {
                 firstname: "Garald",
                 lastname: "Freschi",
@@ -40,15 +40,20 @@
             },
         ];
 
-
-        let person1 = [people[0].firstname, people[0].lastname];
-        console.log(person1);
-
-        people.forEach(iterati);
-        function iterati(value.){
-            let name =  value + ", ";
-            console.log(name);
+        for (let i = 0; i < people.length; i++) {
+        people.forEach (function iterati(person){
+            person = [people[i].firstname, people[i].lastname];
+            let full_name = person.join(" ");
+            console.log(full_name);
+        });
         }
+
+
+
+
+
+
+
     });
     // your code here
 
